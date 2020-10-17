@@ -9,7 +9,6 @@ public class buttonAction : MonoBehaviour
 	public AudioSource voiceObject;
 	public Animator anim;
 	
-	
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,8 @@ public class buttonAction : MonoBehaviour
 	public void OnButtonPressed(VirtualButtonBehaviour vb)
 	{
 	         Debug.Log("Button pressed");
-			 anim.SetBool("isYelling", true);
+			 //anim.SetBool("isYelling", true);
+			 anim.SetTrigger("isPushed");
 			 
 	}
 	public void OnButtonReleased(VirtualButtonBehaviour vb)
